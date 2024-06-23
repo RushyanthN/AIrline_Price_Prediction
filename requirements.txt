@@ -1,6 +1,6 @@
-altair==4.2.2
-streamlit==1.14.0
-numpy==1.22.4
-pandas==1.4.2
-scikit-learn==1.1.1
-xgboost==1.5.2
+altair
+streamlit
+numpy
+pandas
+scikit-learn
+xgboost
