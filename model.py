@@ -6,8 +6,9 @@ from sklearn.metrics import mean_squared_error
 from feature_engine import encoding
 
 def load_and_preprocess_data():
-    bus_df = pd.read_csv(r"C:\Users\rushy\Desktop\Summer\Info_H515\Flight_Info\business.csv")
-    eco_df = pd.read_csv(r"C:\Users\rushy\Desktop\Summer\Info_H515\Flight_Info\economy.csv")
+    bus_df = pd.read_csv(r"business.csv")
+    eco_df = pd.read_csv(r"economy.csv")
+    
     eco_df['class'] = "Economy"
     bus_df['class'] = "Business"
     eco_df = eco_df[(eco_df['airline'] == "Vistara") | (eco_df['airline'] == "Air India")]
